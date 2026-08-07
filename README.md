@@ -30,33 +30,143 @@
 
 ## ⚡ 快速开始（30 秒，零依赖）
 
-### 第一步：安装
+### 方式一：Skills CLI（推荐）
+
+跨 agent 的官方 skills CLI，一条命令装到所有项目：
 
 ```bash
-git clone <本仓库地址> persona-library && cd persona-library
+# 全局安装，所有 agent / 所有项目可用
+npx skills add fendouai/persona-library --global
 
-# 任选其一（按你用的 agent）：
-ln -s "$PWD" ~/.agents/skills/persona-library          # opencode 通用目录
-ln -s "$PWD" ~/.config/opencode/skills/persona-library # opencode
-ln -s "$PWD" ~/.claude/skills/persona-library          # Claude Code
-ln -s "$PWD" ~/.codex/skills/persona-library           # Codex
-ln -s "$PWD" .opencode/skills/persona-library          # 项目级（跟随仓库走）
+# 只装到指定 agent（opencode / claude-code / codex …）
+npx skills add fendouai/persona-library --global --agent <agent-name>
+
+# 项目级安装（可提交到仓库，与协作者共享）
+npx skills add fendouai/persona-library
 ```
 
-> 目录名必须叫 `persona-library`（与 SKILL.md frontmatter 一致）。
-> Windows 用 `mklink /J` 目录链接，或直接复制目录。
-> 安装后**重启 agent** 即可生效。
+更新到最新版：
 
-### 第二步：用起来
+```bash
+npx skills update persona-library --global
+```
+
+### 方式二：手动 clone
+
+任意 agent 直接把仓库放进它的 skills 目录（目录名保持 `persona-library`，
+与 SKILL.md frontmatter 一致）：
+
+```bash
+# opencode（用户级，所有项目可用）
+git clone https://github.com/fendouai/persona-library ~/.config/opencode/skills/persona-library
+
+# opencode（项目级，跟随仓库走）
+git clone https://github.com/fendouai/persona-library .opencode/skills/persona-library
+
+# Claude Code
+git clone https://github.com/fendouai/persona-library ~/.claude/skills/persona-library
+
+# Codex
+git clone https://github.com/fendouai/persona-library ~/.codex/skills/persona-library
+```
+
+> 两种方式任选其一，安装后**重启 agent**（或重新加载 skills）即可生效。
+
+### 验证
 
 新开一个会话，对 agent 说：
 
 ```
+/persona-library
 用 pragmatic-founder 的语气改写：「这个产品很好用。」
 ```
 
-没了。没有配置，没有报错，agent 会读 `SKILL.md` → 定位
-`personas/archetypes/pragmatic-founder.md` → 改写并附保真 / 风格评分。
+预期：agent 定位 `personas/archetypes/pragmatic-founder.md` → 改写 →
+附保真/风格评分。无任何环境报错即安装成功。
+
+---
+
+## 🎬 交互方式（全部直接对 agent 说）
+
+### 粘贴模式（默认）
+
+```
+/persona-library
+
+用 warm-educator 的语气把这段产品介绍改写得更亲切：
+[粘贴你的文本]
+```
+
+或直接请求：
+
+```
+请 humanize 这段，别让它像 AI 写的：[粘贴你的文本]
+```
+
+agent 走完整流程：定位 persona → 锁定事实 → 改写 → 附保真/风格/可读性评分。
+
+### 文件模式（原地改写文件）
+
+```
+把 docs/launch-post.md 改成创始人口气
+```
+
+agent 读取文件 → 原地改写（只动正文散文，代码块 / frontmatter / 数据不动）
+→ 对话中只报告改动摘要，不贴全文。
+
+### 嵌入式（大任务的一环）
+
+在 PR 描述、commit message、发布文案等更大任务里顺带要求：
+agent 只输出最终文本，不附草稿和评分。
+
+### 文风校准（用你的文风改写）
+
+**① 轻量校准**——不创建文件，只按你的样本改写这一次：
+
+```
+/persona-library
+
+这是我写的样本（用来匹配文风）：
+[粘贴 2-3 段你自己的文章]
+
+现在用这个文风 humanize 这段 AI 味很重的文本：
+[粘贴要改写的文本]
+```
+
+agent 先分析你的句长、用词、段落节奏、标点习惯，再按你的习惯改写——
+你爱用的口头禅和怪癖会保留，而不是被抹平成"标准好文"。
+
+**② 持久化**——明确要求创建 persona，生成长久可复用的人格：
+
+```
+这是我 3 篇文章，提取我的文风存成 persona。
+```
+
+agent 六步抽取 → 生成 `personas/custom/my-voice.md` → 报告各维度置信度
+（句长 0.91 高 · 幽默 0.42 低，低置信维度会如实告诉你）。
+
+### 更多用法
+
+| 你想做什么 | 对 agent 说 | 行为 |
+|---|---|---|
+| 按人格改写 | 「用 warm-educator 的语气把这段产品介绍改写得更亲切」 | 读 persona → 锁定事实 → 改写 → 评分 |
+| 去 AI 味 | 「humanize 这段，别让它像 AI 写的」 | 匹配 `concise-tech-creator` → 改写 |
+| 提取文风 | 「这是我 3 篇专栏，提取我的写作风格存成 persona」 | 六步抽取 → 生成 `personas/custom/<id>.md` → 报告置信度 |
+| 混合语气 | 「70% 创始人口气 + 30% 老师的语气，改写这段话」 | 读两个 persona → 加权合成 → 改写 |
+| 保真检查 | 「看看这次改写有没有改掉事实」 | 对照原文逐项核数字 / 实体 / 日期 → 评分 |
+
+**改写示例：**
+
+```
+你：帮我把这封邮件改得像一个温暖的老师写的。
+agent：我选择 warm-educator（温暖 / 比喻 / 循序渐进）。
+      改写结果：……
+      评分：meaning 0.97 · style 0.86 · readability 0.92
+      数字与日期原样保留，风格强度 0.7，需要更浓可以调高。
+```
+
+**铁律**：数字 / 实体 / 日期 / 链接 / 引用不动 · 不新增事实 · 不改立场 ·
+不删不确定性 · 不虚构个人经历 · 长度 ±20%。
 
 ---
 
@@ -109,46 +219,6 @@ ln -s "$PWD" .opencode/skills/persona-library          # 项目级（跟随仓�
 
 > 想要谁？把 agent 切换到任意 persona，或提出你的场景，让 agent 按
 > [PERSONA_SPEC.md](PERSONA_SPEC.md) 帮你定制一个。
-
----
-
-## 🧩 根据你的文本定制
-
-内置人格不够？**3 篇你的文章，生成专属文风**：
-
-```
-你：这是我的 3 篇文章，提取我的文风。
-agent：已生成 personas/custom/my-voice.md。
-      置信度：句长 0.91（高）· 直接度 0.88（高）
-             幽默 0.42（低）· 长文结构 0.40（低）
-      建议：多提供几篇 500 词以上的长文，可提升低置信维度。
-```
-
-还可以**混合语气**：「70% 创始人口气 + 30% 老师的语气，改写这段话」——
-agent 读取两个 persona，加权合成后改写，输出附评分。
-
-## 🎬 用法示例（全部直接对 agent 说）
-
-| 你想做什么 | 对 agent 说 | 行为 |
-|---|---|---|
-| 按人格改写 | 「用 warm-educator 的语气把这段产品介绍改写得更亲切」 | 读 persona → 锁定事实 → 改写 → 评分 |
-| 去 AI 味 | 「humanize 这段，别让它像 AI 写的」 | 匹配 `concise-tech-creator` → 改写 |
-| 提取文风 | 「这是我 3 篇专栏，提取我的写作风格存成 persona」 | 六步抽取 → 生成 `personas/custom/<id>.md` → 报告置信度 |
-| 混合语气 | 「70% 创始人口气 + 30% 老师的语气，改写这段话」 | 读两个 persona → 加权合成 → 改写 |
-| 保真检查 | 「看看这次改写有没有改掉事实」 | 对照原文逐项核数字 / 实体 / 日期 → 评分 |
-
-**改写示例：**
-
-```
-你：帮我把这封邮件改得像一个温暖的老师写的。
-agent：我选择 warm-educator（温暖 / 比喻 / 循序渐进）。
-      改写结果：……
-      评分：meaning 0.97 · style 0.86 · readability 0.92
-      数字与日期原样保留，风格强度 0.7，需要更浓可以调高。
-```
-
-**铁律**：数字 / 实体 / 日期 / 链接 / 引用不动 · 不新增事实 · 不改立场 ·
-不删不确定性 · 不虚构个人经历 · 长度 ±20%。
 
 ---
 

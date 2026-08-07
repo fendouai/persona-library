@@ -13,6 +13,7 @@ from .blender import mix_personas
 from .config import default_config
 from .exporter import export_persona, install_persona
 from .extractor import extract_persona
+from .llm import LLMError
 from .models import MixRequest, RewriteRequest
 from .registry import PersonaRegistry, normalize_id
 from .rewriter import Rewriter
@@ -331,7 +332,11 @@ Score each output from 1 to 5:
 
 
 def main() -> None:
-    app()
+    try:
+        app()
+    except LLMError as e:
+        typer.echo(f"Error: {e}", err=True)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

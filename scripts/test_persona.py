@@ -5,7 +5,7 @@ Verifies structure and checks the persona's own positive examples:
 facts (numbers, entities) present in Input must survive in Output.
 
 Usage:
-    python scripts/test-persona.py <persona-id-or-file>
+    python scripts/test_persona.py <persona-id-or-file>
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ NUMBERS = re.compile(r"\d[\d,.]*")
 def main() -> int:
     args = sys.argv[1:]
     if not args:
-        print("Usage: python scripts/test-persona.py <persona-id-or-file>")
+        print("Usage: python scripts/test_persona.py <persona-id-or-file>")
         return 1
     arg = args[0]
     path = Path(arg)

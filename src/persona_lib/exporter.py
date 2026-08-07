@@ -13,9 +13,17 @@ def export_json(persona: Persona) -> Dict:
     return persona.model_dump(mode="json")
 
 
+def _body_without_heading(persona: Persona) -> str:
+    body = persona.body_markdown.strip()
+    lines = body.splitlines()
+    if lines and lines[0].startswith("# "):
+        return "\n".join(lines[1:]).strip()
+    return body
+
+
 def export_claude(persona: Persona) -> str:
     """Claude (Claude Code / Claude.ai custom instructions): prompt-only markdown."""
-    return f"# {persona.name}\n\n{persona.body_markdown}\n"
+    return f"# {persona.name}\n\n{_body_without_heading(persona)}\n"
 
 
 def export_codex(persona: Persona) -> str:
@@ -27,7 +35,7 @@ def export_codex(persona: Persona) -> str:
         f"**Tags**: {', '.join(persona.tags)}\n"
         f"**Version**: {persona.version}\n\n"
     )
-    return header + persona.body_markdown + "\n"
+    return header + _body_without_heading(persona) + "\n"
 
 
 def export_opencode(persona: Persona) -> str:
@@ -41,7 +49,7 @@ def export_opencode(persona: Persona) -> str:
     }
     return (
         f"```yaml\n{json.dumps(front, ensure_ascii=False, indent=2)}\n```\n\n"
-        f"# {persona.name}\n\n{persona.body_markdown}\n"
+        f"# {persona.name}\n\n{_body_without_heading(persona)}\n"
     )
 
 

@@ -21,7 +21,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/archetypes/first-principles-thinker.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/archetypes/first-principles-thinker.md",
     "profile": {
       "voice_summary": "Analytical, exacting, contrarian, transparent, and methodical.",
       "tone": {
@@ -161,7 +161,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/archetypes/investigative-journalist.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/archetypes/investigative-journalist.md",
     "profile": {
       "voice_summary": "Precise, authoritative, measured, interrogative, and unsentimental.",
       "tone": {
@@ -303,7 +303,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/archetypes/keynote-product-visionary.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/archetypes/keynote-product-visionary.md",
     "profile": {
       "voice_summary": "Confident, vivid, magnetic, big-picture, and relentlessly forward.",
       "tone": {
@@ -442,7 +442,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/archetypes/pragmatic-founder.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/archetypes/pragmatic-founder.md",
     "profile": {
       "voice_summary": "Direct, practical, confident, concise, and slightly opinionated.",
       "tone": {
@@ -586,7 +586,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/archetypes/warm-educator.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/archetypes/warm-educator.md",
     "profile": {
       "voice_summary": "Patient, encouraging, clear, empathetic, and unhurried.",
       "tone": {
@@ -725,7 +725,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/brands/bold-d2c-brand.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/brands/bold-d2c-brand.md",
     "profile": {
       "voice_summary": "Energetic, direct, confident, and playful.",
       "tone": {
@@ -872,7 +872,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/brands/institutional-trust-brand.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/brands/institutional-trust-brand.md",
     "profile": {
       "voice_summary": "Authoritative, trustworthy, formal, and measured.",
       "tone": {
@@ -1019,7 +1019,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/brands/minimalist-saas-brand.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/brands/minimalist-saas-brand.md",
     "profile": {
       "voice_summary": "Clean, confident, understated, and precise.",
       "tone": {
@@ -1168,7 +1168,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/creators/concise-tech-creator.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/creators/concise-tech-creator.md",
     "profile": {
       "voice_summary": "Dry, blunt, fast, technical, and funny without trying.",
       "tone": {
@@ -1314,7 +1314,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/creators/honest-personal-blogger.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/creators/honest-personal-blogger.md",
     "profile": {
       "voice_summary": "Raw, self-aware, warm, and reflective.",
       "tone": {
@@ -1461,7 +1461,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/creators/short-form-viral-creator.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/creators/short-form-viral-creator.md",
     "profile": {
       "voice_summary": "Playful, energetic, hook-driven, and concise.",
       "tone": {
@@ -1609,7 +1609,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/creators/story-first-essayist.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/creators/story-first-essayist.md",
     "profile": {
       "voice_summary": "Lyrical, patient, observant, gentle, and quietly knowing.",
       "tone": {
@@ -1747,7 +1747,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/personal/calm-reflective-writer.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/personal/calm-reflective-writer.md",
     "profile": {
       "voice_summary": "Serene, reflective, warm, unhurried, and gently uncertain.",
       "tone": {
@@ -1898,7 +1898,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/personal/direct-no-filler-communicator.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/personal/direct-no-filler-communicator.md",
     "profile": {
       "voice_summary": "Blunt, concise, honest, direct, and kind underneath.",
       "tone": {
@@ -2051,7 +2051,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/personal/empathetic-coach.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/personal/empathetic-coach.md",
     "profile": {
       "voice_summary": "Warm, supportive, encouraging, specific, and quietly confident.",
       "tone": {
@@ -2202,7 +2202,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/personal/witty-social-voice.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/personal/witty-social-voice.md",
     "profile": {
       "voice_summary": "Playful, dry, conversational, sharp, and warm underneath.",
       "tone": {
@@ -2352,7 +2352,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/professional/academic-researcher.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/professional/academic-researcher.md",
     "profile": {
       "voice_summary": "Rigorous, measured, nuanced, formal, and intellectually humble.",
       "tone": {
@@ -2505,7 +2505,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/professional/analyst-brief-writer.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/professional/analyst-brief-writer.md",
     "profile": {
       "voice_summary": "Neutral, precise, analytical, restrained, and evidence-anchored.",
       "tone": {
@@ -2658,7 +2658,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/professional/customer-success-voice.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/professional/customer-success-voice.md",
     "profile": {
       "voice_summary": "Warm, clear, supportive, practical, and patient.",
       "tone": {
@@ -2810,7 +2810,7 @@
     "source_type": "archetype",
     "style_strength_default": 0.7,
     "disclaimer": null,
-    "path": "/Users/f/Documents/GitHub/humanize-ai-skill/personas/professional/executive-communicator.md",
+    "path": "/Users/f/Documents/GitHub/persona-library/personas/professional/executive-communicator.md",
     "profile": {
       "voice_summary": "Authoritative, decisive, formal, concise, and accountable.",
       "tone": {

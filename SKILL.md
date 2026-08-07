@@ -15,6 +15,10 @@ description: >
   Works entirely in-context: reads personas/*.md as writing specifications and
   rewrites directly. Zero setup — no API keys, no CLI, no Python, no server.
 
+  Three invocation modes: pasted text (default, full rewrite + fidelity/style
+  scores), file mode (point at a file, rewrite it in place, report a summary),
+  embedded mode (used as one step of a larger task, output the final text only).
+
   NOT for: plain translation or generic proofreading with no voice/persona
   request; writing long-form content from scratch.
 triggers:
@@ -45,6 +49,30 @@ triggers:
 - 用户想从自己的样本文本里**提取文风**并复用
 - 用户想**混合**两种表达方式
 - 用户想检查改写是否**改变了事实**
+
+## 调用模式（Invocation Modes）
+
+**粘贴模式（默认）**：用户在对话里直接给文本。走完 STEP 1–4 完整流程，
+交付改写结果 + 保真/风格评分 + 修改要点。
+
+**文件模式**：用户指向一个文件（如「把 docs/launch-post.md 改成创始人
+语气」）。读取文件 → 内部走完四步 → **原地改写该文件**（只动正文散文，
+代码块 / frontmatter / 数据 / 链接目标一律不动）→ 对话中只报告改动摘要，
+不贴全文。
+
+**嵌入式**：另一个任务或 agent 把这步作为更大工作流的一环（PR 描述、
+commit message、发布文案）。内部走完四步，**只输出最终文本**——不要
+草稿、评分、说明。
+
+## 文风校准（Voice Calibration）
+
+用户提供自己的写作样本时：
+
+- **轻量校准（仅本次对话）**：先分析样本的句长、词汇、段落开头、标点、
+  过渡方式，再**按样本的习惯改写**，而不是套用默认人格；样本里就是爱用
+  的怪癖要保留，不要抹平成"标准好文"。样本优先于本 skill 的风格规则。
+- **持久化（六步抽取）**：用户明确要"创建 persona / 提取文风"时，走下方
+  六步流程，生成 `personas/custom/<id>.md` 供长期复用。
 
 ## 工作流（四步，全部在对话内完成）
 
