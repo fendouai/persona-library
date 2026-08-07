@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "archetypes",
+      "name": "Archetypes",
+      "description": "Timeless, reusable expressive archetypes (the founder, the educator, the journalist)",
+      "emoji": "🎭"
+    },
+    {
+      "id": "founders",
+      "name": "Founders",
+      "description": "Startup founders and product-builders communication styles",
+      "emoji": "🚀"
+    },
+    {
+      "id": "educators",
+      "name": "Educators",
+      "description": "Teachers, trainers and explainers who make complex topics accessible",
+      "emoji": "🎓"
+    },
+    {
+      "id": "writers",
+      "name": "Writers",
+      "description": "Essayists, novelists and literary styles",
+      "emoji": "✍️"
+    },
+    {
+      "id": "creators",
+      "name": "Creators",
+      "description": "Content creators, bloggers, podcasters and social writers",
+      "emoji": "🎨"
+    },
+    {
+      "id": "journalists",
+      "name": "Journalists",
+      "description": "Reporters, editors and news writers",
+      "emoji": "📰"
+    },
+    {
+      "id": "marketers",
+      "name": "Marketers",
+      "description": "Growth, brand and campaign writers",
+      "emoji": "📣"
+    },
+    {
+      "id": "brands",
+      "name": "Brands",
+      "description": "Company and brand voice guidelines",
+      "emoji": "🏷️"
+    },
+    {
+      "id": "professional",
+      "name": "Professional",
+      "description": "Business, corporate and workplace communication",
+      "emoji": "💼"
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "description": "Casual, short-form and social media voices",
+      "emoji": "📱"
+    },
+    {
+      "id": "academic",
+      "name": "Academic",
+      "description": "Research papers, theses and scholarly writing",
+      "emoji": "📚"
+    },
+    {
+      "id": "personal",
+      "name": "Personal",
+      "description": "Everyday personal voices for diaries, letters and journals",
+      "emoji": "🪴"
+    },
+    {
+      "id": "custom",
+      "name": "Custom",
+      "description": "User-created and sample-derived personas",
+      "emoji": "🧩"
+    }
+  ],
+  "tag_dimensions": {
+    "tone": ["concise", "warm", "authoritative", "playful", "serious", "inspiring", "pragmatic", "empathetic"],
+    "structure": ["story-driven", "analytical", "list-driven", "argumentative", "explanatory", "conversational"],
+    "platform": ["x", "linkedin", "email", "blog", "academic", "newsletter", "docs"]
+  },
+  "source_types": ["archetype", "user-created", "sample-derived", "brand", "inspired"]
+}

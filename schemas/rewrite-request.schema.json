@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://persona-library.dev/schemas/rewrite-request.schema.json",
+  "title": "RewriteRequest",
+  "description": "POST /v1/rewrite request payload.",
+  "type": "object",
+  "properties": {
+    "persona_id": { "type": ["string", "null"] },
+    "persona": { "$ref": "persona.schema.json" },
+    "text": { "type": "string", "minLength": 1 },
+    "style_strength": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.7 },
+    "platform": { "type": ["string", "null"], "default": "generic" },
+    "preserve_length": { "type": "boolean", "default": true },
+    "candidate_count": { "type": "integer", "minimum": 1, "maximum": 5, "default": 3 }
+  },
+  "required": ["text"],
+  "anyOf": [
+    { "required": ["persona_id"] },
+    { "required": ["persona"] }
+  ],
+  "additionalProperties": false
+}

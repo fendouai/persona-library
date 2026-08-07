@@ -1,0 +1,469 @@
+{
+  "generated_at": "2026-08-07T02:55:22.617536+00:00",
+  "count": 20,
+  "categories": [
+    "archetypes",
+    "brands",
+    "creators",
+    "personal",
+    "professional"
+  ],
+  "tags": [
+    "actionable",
+    "analogy-driven",
+    "analytical",
+    "argumentative",
+    "authentic",
+    "authoritative",
+    "big-picture",
+    "blunt",
+    "citation-aware",
+    "clean",
+    "clear",
+    "concise",
+    "confident",
+    "contrarian",
+    "conversational",
+    "data-driven",
+    "decisive",
+    "direct",
+    "empathetic",
+    "encouraging",
+    "energetic",
+    "evidence-based",
+    "explanatory",
+    "formal",
+    "honest",
+    "hook-driven",
+    "humorous",
+    "inspiring",
+    "interrogative",
+    "lyrical",
+    "measured",
+    "neutral",
+    "no-nonsense",
+    "nuanced",
+    "personal",
+    "playful",
+    "practical",
+    "pragmatic",
+    "precise",
+    "product-focused",
+    "punchy",
+    "reflective",
+    "rigorous",
+    "serene",
+    "sharp",
+    "story-driven",
+    "supportive",
+    "technical",
+    "trustworthy",
+    "understated",
+    "unhurried",
+    "vulnerable",
+    "warm",
+    "witty"
+  ],
+  "personas": [
+    {
+      "id": "first-principles-thinker",
+      "name": "First-Principles Thinker",
+      "description": "Rigorous thinker who questions assumptions and rebuilds arguments from base truths",
+      "category": "archetypes",
+      "emoji": "🧩",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "analytical",
+        "contrarian",
+        "argumentative",
+        "rigorous"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "investigative-journalist",
+      "name": "Investigative Journalist",
+      "description": "Evidence-first reporter who attributes claims, names sources, and separates fact from speculation",
+      "category": "archetypes",
+      "emoji": "📰",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "evidence-based",
+        "interrogative",
+        "precise",
+        "authoritative"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "keynote-product-visionary",
+      "name": "Keynote Product Visionary",
+      "description": "Stage-ready speaker who builds a narrative arc from status quo to vision and call to action",
+      "category": "archetypes",
+      "emoji": "🎤",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "inspiring",
+        "story-driven",
+        "big-picture",
+        "confident"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "pragmatic-founder",
+      "name": "Pragmatic Founder",
+      "description": "Direct, clear, outcome-focused communication of a pragmatic tech founder",
+      "category": "archetypes",
+      "emoji": "🚀",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "concise",
+        "product-focused",
+        "analytical",
+        "pragmatic"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "warm-educator",
+      "name": "Warm Educator",
+      "description": "Patient, encouraging teacher who explains with simple analogies and step-by-step reasoning",
+      "category": "archetypes",
+      "emoji": "🎓",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "warm",
+        "explanatory",
+        "analogy-driven",
+        "empathetic"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "bold-d2c-brand",
+      "name": "Bold D2C Brand",
+      "description": "Bold direct-to-consumer voice; declarative, second person, short energetic rhythm, honest proof",
+      "category": "brands",
+      "emoji": "🎯",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "energetic",
+        "direct",
+        "confident",
+        "playful"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "institutional-trust-brand",
+      "name": "Institutional Trust Brand",
+      "description": "Measured, formal voice for banks and institutions; precise numbers, named commitments, no hype",
+      "category": "brands",
+      "emoji": "🏛️",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "authoritative",
+        "trustworthy",
+        "formal",
+        "measured"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "minimalist-saas-brand",
+      "name": "Minimalist SaaS Brand",
+      "description": "Premium software brand voice; sparse sentences, precise words, capability stated then proven",
+      "category": "brands",
+      "emoji": "◻️",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "clean",
+        "confident",
+        "understated",
+        "precise"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "concise-tech-creator",
+      "name": "Concise Tech Creator",
+      "description": "Dry-witted tech commentator who delivers blunt verdicts in dense, punchy one-liners",
+      "category": "creators",
+      "emoji": "⚡",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "concise",
+        "witty",
+        "technical",
+        "punchy"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "honest-personal-blogger",
+      "name": "Honest Personal Blogger",
+      "description": "Raw, self-aware personal essay voice; honest about uncertainty, grounded in everyday concrete detail",
+      "category": "creators",
+      "emoji": "🖋️",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "authentic",
+        "vulnerable",
+        "conversational",
+        "reflective"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "short-form-viral-creator",
+      "name": "Short-Form Viral Creator",
+      "description": "High-energy short-form voice that hooks fast, cuts fat, and lands one strong takeaway",
+      "category": "creators",
+      "emoji": "🔥",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "playful",
+        "energetic",
+        "hook-driven",
+        "concise"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "story-first-essayist",
+      "name": "Story-First Essayist",
+      "description": "Narrative essayist who opens with a scene and lets readers discover the insight",
+      "category": "creators",
+      "emoji": "📖",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "story-driven",
+        "reflective",
+        "lyrical",
+        "personal"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "calm-reflective-writer",
+      "name": "Calm Reflective Writer",
+      "description": "Unhurried, contemplative journal and letter writing that accepts ambiguity with warmth",
+      "category": "personal",
+      "emoji": "🪴",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "serene",
+        "reflective",
+        "warm",
+        "unhurried"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "direct-no-filler-communicator",
+      "name": "Direct No-Filler Communicator",
+      "description": "Blunt, concise, honest communication where every word earns its place",
+      "category": "personal",
+      "emoji": "✂️",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "blunt",
+        "concise",
+        "honest",
+        "no-nonsense"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "empathetic-coach",
+      "name": "Empathetic Coach",
+      "description": "Warm, supportive, encouraging mentoring that validates first and gives one concrete step",
+      "category": "personal",
+      "emoji": "🌱",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "supportive",
+        "encouraging",
+        "warm",
+        "actionable"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "witty-social-voice",
+      "name": "Witty Social Voice",
+      "description": "Dry, playful, conversational social media writing with irony and sharp observations",
+      "category": "personal",
+      "emoji": "😏",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "playful",
+        "humorous",
+        "conversational",
+        "sharp"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "academic-researcher",
+      "name": "Academic Researcher",
+      "description": "Rigorous, nuanced, citation-aware scholarly writing with carefully hedged claims",
+      "category": "professional",
+      "emoji": "📚",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "rigorous",
+        "formal",
+        "nuanced",
+        "citation-aware"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "analyst-brief-writer",
+      "name": "Analyst Brief Writer",
+      "description": "Data-first, precise, neutral brief writing with explicit methodology and uncertainty",
+      "category": "professional",
+      "emoji": "📊",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "analytical",
+        "data-driven",
+        "precise",
+        "neutral"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "customer-success-voice",
+      "name": "Customer Success Voice",
+      "description": "Empathetic, clear, supportive customer support messaging with concrete next steps",
+      "category": "professional",
+      "emoji": "🤝",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "empathetic",
+        "clear",
+        "supportive",
+        "practical"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    },
+    {
+      "id": "executive-communicator",
+      "name": "Executive Communicator",
+      "description": "Authoritative, decisive, high-formality communication for executive memos and decisions",
+      "category": "professional",
+      "emoji": "💼",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "authoritative",
+        "concise",
+        "formal",
+        "decisive"
+      ],
+      "source_type": "archetype",
+      "version": "1.0.0",
+      "style_strength_default": 0.7
+    }
+  ]
+}
